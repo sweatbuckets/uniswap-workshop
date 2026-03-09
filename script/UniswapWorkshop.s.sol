@@ -6,6 +6,8 @@ import "../src/BayToken.sol";
 import "../src/StarToken.sol";
 import "../src/LiquidityProvider.sol";
 
+//현재 설정된 라우터 주소 = SwapRouter02 컨트랙트 - SwapRouter02 인터페이스는 deadline 없음
+// deadline 필드 삭제
 interface ISwapRouter {
     struct ExactInputSingleParams {
         address tokenIn; address tokenOut; uint24 fee;
