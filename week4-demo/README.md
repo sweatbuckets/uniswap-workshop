@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Week4 Demo
 
-## Getting Started
+`week4-demo`는 Uniswap Workshop용 Next.js 프론트엔드 데모 앱입니다.
 
-First, run the development server:
+현재 포함된 기능:
+
+- Wagmi 기반 지갑 연결
+- 토큰 스왑 UI
+- 유동성 추가 UI
+
+## 실행 방법
+
+개발 서버 실행:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 `http://localhost:3000` 으로 접속하면 됩니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 주요 파일
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/page.tsx`: 메인 화면
+- `src/app/layout.tsx`: App Router 레이아웃
+- `src/config/wagmi.ts`: Wagmi 설정
+- `src/components/ConnectWallet.tsx`: 지갑 연결 버튼
+- `src/components/Swap.tsx`: 스왑 UI
+- `src/components/AddLiquidity.tsx`: 유동성 추가 UI
 
-## Learn More
+## 연결된 컨트랙트
 
-To learn more about Next.js, take a look at the following resources:
+- `BAY`: `0xE10090140592694276BcaBe3434d32847027bd69`
+- `STAR`: `0x47F8d8d6E9001D4052C04c78D07fe939F050ACEb`
+- `LP`: `0xd6e758bED11A61BcA082ACFd31764a1F4765DFd2`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 참고
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 참고 자료: `https://ahwlsqja.github.io/uniswap-workshop/`
+- 상위 저장소 README: `../README.md`
