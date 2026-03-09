@@ -34,6 +34,11 @@ npm run dev
 - `STAR`: `0x47F8d8d6E9001D4052C04c78D07fe939F050ACEb`
 - `LP`: `0xd6e758bED11A61BcA082ACFd31764a1F4765DFd2`
 
+## 화면 예시
+
+![week4-demo 화면 1](./public/week4-demo.png)
+![week4-demo 화면 2](./public/week4-demo(2).png)
+
 ## 참고
 
 - 참고 자료: `https://ahwlsqja.github.io/uniswap-workshop/`
